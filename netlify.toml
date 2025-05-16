@@ -1,6 +1,6 @@
 [build]
   command = "npm install && npm run build"
-  publish = "dist" # Set to your build directory if any
+  publish = "."
 
 [[redirects]]
   from = "/*"
