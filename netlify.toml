@@ -1,10 +1,15 @@
 [build]
-  command = "npm install"
-  publish = "/"
-  functions = "netlify/functions"
+  command = "npm run build" # or your build command
+  publish = "build"          # or your build directory
+  functions = ".netlify/functions"
+
+
+[functions]
+  directory = ".netlify/functions"
+
 
 
 [[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/:splat"
+  from = "/*"
+  to = "/index.html"
   status = 200
