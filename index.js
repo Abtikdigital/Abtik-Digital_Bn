@@ -30,7 +30,9 @@ app.use("/admin", adminRoutes);
 app.use("/career", careerRoutes);
 app.use("/quote", quoteRoutes);
 app.use("/emailMarketing", emailMarketingRoutes);
-
+app.get("/", (req, res) => {
+  res.send("<h1>Home</h1>");
+});
 app.listen(PORT, () => {
   console.log(`PORT IS RUNNING ${PORT}`);
 });
