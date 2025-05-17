@@ -14,6 +14,7 @@ const emailMarketingRoutes = require("./routes/emailMarketingRoutes.js");
 
 const PORT = process.env.port;
 const app = express();
+console.log("this is url ",process.env.front_end_url)
 
 app.use(
   cors({
