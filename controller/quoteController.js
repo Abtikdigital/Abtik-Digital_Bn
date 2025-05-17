@@ -27,7 +27,7 @@ const addQuote = async (req, res) => {
         .status(400)
         .json({ isSuccess: false, message: "Validation Error", error });
     }
-    let isEmailAlreadyExist = await quoteModel({ email });
+    let isEmailAlreadyExist = await quoteModel.findOne({ email });
     if (isEmailAlreadyExist) {
       return res
         .status(400)
