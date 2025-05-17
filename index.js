@@ -17,7 +17,7 @@ const app = express();
 console.log("this is frontend url ",process.env.front_end_url)
 app.use(
   cors({
-    origin: [process.env.front_end_url],
+    origin: ["https://abtikdigital.com"],
     credentials: true,
   })
 );
