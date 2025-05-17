@@ -17,7 +17,7 @@ const app = express();
 console.log("this is frontend url ",process.env.front_end_url)
 app.use(
   cors({
-    origin: ["https://abtikdigital.com"],
+    origin: ["https://bejewelled-kashata-badc16.netlify.app"],
     credentials: true,
   })
 );
